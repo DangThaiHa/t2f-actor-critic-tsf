@@ -1,0 +1,39 @@
+{
+  "dataset": "eld",
+  "freq": "15min",
+  "epochs": 1,
+  "train_shape": [
+    6656,
+    5
+  ],
+  "test_shape": [
+    2192,
+    5
+  ],
+  "local_length": 2,
+  "global_length": 3,
+  "hidden_size": 32,
+  "num_layers": 1,
+  "batch_size": 8,
+  "predict_rows": 64,
+  "model_save_path": "F:\\Phân tích dự báo\\code\\t2f-main\\results\\demo_model\\ep1",
+  "prediction_shape": [
+    2,
+    1
+  ],
+  "prediction_head": [
+    {
+      "index": 0,
+      "series_id": "MT_012",
+      "timestamp": "2011-01-19T19:45:00",
+      "prediction": 0.0003021759098951679
+    },
+    {
+      "index": 1,
+      "series_id": "MT_012",
+      "timestamp": "2011-01-19T20:00:00",
+      "prediction": -0.0022302400552603532
+    }
+  ],
+  "elapsed_seconds": 16.72
+}

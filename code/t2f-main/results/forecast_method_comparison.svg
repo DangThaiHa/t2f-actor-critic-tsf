@@ -1,0 +1,58 @@
+<svg width="1200" height="700" viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font: 700 30px Arial, sans-serif; fill: #222; }
+      .label { font: 600 18px Arial, sans-serif; fill: #333; }
+      .tick { font: 14px Arial, sans-serif; fill: #555; }
+      .grid { stroke: #d9d9d9; stroke-width: 1; }
+      .axis { stroke: #444; stroke-width: 1.5; }
+      .actual { fill: none; stroke: #3f7bd9; stroke-width: 4; }
+      .pred { fill: none; stroke: #d9485f; stroke-width: 3; }
+      .point { fill: #d9485f; stroke: #ffffff; stroke-width: 2; }
+      .note { font: 16px Arial, sans-serif; fill: #333; }
+    </style>
+  </defs>
+
+  <rect width="1200" height="700" fill="#f8f9fb"/>
+  <text x="600" y="60" text-anchor="middle" class="title">T2F Forecast Method</text>
+
+  <g transform="translate(100,110)">
+    <line x1="0" y1="500" x2="980" y2="500" class="axis"/>
+    <line x1="0" y1="0" x2="0" y2="500" class="axis"/>
+
+    <g class="grid">
+      <line x1="0" y1="0" x2="980" y2="0"/>
+      <line x1="0" y1="100" x2="980" y2="100"/>
+      <line x1="0" y1="200" x2="980" y2="200"/>
+      <line x1="0" y1="300" x2="980" y2="300"/>
+      <line x1="0" y1="400" x2="980" y2="400"/>
+      <line x1="0" y1="500" x2="980" y2="500"/>
+    </g>
+
+    <path class="actual" d="M 0 350 L 80 318 L 160 300 L 240 270 L 320 240 L 400 210 L 480 180 L 560 170 L 640 150 L 720 120 L 800 100 L 880 90 L 980 70"/>
+
+    <path class="pred" d="M 980 70 L 1040 60"/>
+
+    <circle cx="980" cy="70" r="7" class="point"/>
+    <circle cx="1040" cy="60" r="7" class="point"/>
+
+    <text x="250" y="80" class="label">Biến động lịch sử thực tế</text>
+    <text x="760" y="50" class="label">Dự đoán mô hình</text>
+
+    <text x="980" y="95" class="tick">0.00030</text>
+    <text x="1040" y="85" class="tick">-0.00223</text>
+
+    <text x="450" y="560" class="label" text-anchor="middle">Thời gian</text>
+    <text x="-50" y="250" class="label" transform="rotate(-90 -50 250)">Load</text>
+
+    <text x="0" y="530" class="tick">19:45</text>
+    <text x="200" y="530" class="tick">19:46</text>
+    <text x="400" y="530" class="tick">19:47</text>
+    <text x="600" y="530" class="tick">19:48</text>
+    <text x="800" y="530" class="tick">19:49</text>
+    <text x="930" y="530" class="tick">19:50</text>
+
+    <text x="120" y="580" class="note">Mô hình T2F dự đoán điểm tiếp theo dựa trên</text>
+    <text x="120" y="610" class="note">chuỗi lịch sử và thông tin covariates của series MT_012</text>
+  </g>
+</svg>

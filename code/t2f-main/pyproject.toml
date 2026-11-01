@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "t2f"
+version = "0.1.0"
+description = "Transformer-based Twin Delayed Deep Deterministic policy gradient for forecasting"
+readme = "readme.md"
+requires-python = ">=3.11,<3.12"
+dependencies = [
+    "arch==7.2.0",
+    "lightning==2.1.4",
+    "lightning-utilities==0.11.7",
+    "matplotlib==3.9.2",
+    "matplotlib-inline==0.1.7",
+    "multidict==6.1.0",
+    "numpy==1.26.4",
+    "pandas==2.2.2",
+    "pmdarima==2.0.4",
+    "prophet==1.1.6",
+    "pyarrow==17.0.0",
+    "pytz==2024.1",
+    "py7zr==0.22.0",
+    "scikit-learn==1.5.1",
+    "scipy==1.14.0",
+    "seaborn==0.13.2",
+    "statsforecast==1.7.8",
+    "statsmodels==0.14.2",
+    "sympy==1.13.2",
+    "torch==2.2.0",
+    "torchmetrics==1.4.2",
+    "tqdm==4.66.5",
+    "fastparquet==2024.11.0",
+]
+
+[tool.setuptools]
+include-package-data = true
