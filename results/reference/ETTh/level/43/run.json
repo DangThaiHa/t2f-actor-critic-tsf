@@ -1,0 +1,50 @@
+{
+  "target_mode": "level",
+  "level_scales": {
+    "1": 2.568862590941675,
+    "2": 5.057394453283822
+  },
+  "dataset": "ETTh",
+  "seed": 43,
+  "profile": "main",
+  "epochs": 8,
+  "train_rows_per_series": 512,
+  "common_regular_steps": 17420,
+  "stations": [
+    "1",
+    "2"
+  ],
+  "train_start": "2017-10-30 18:00:00",
+  "train_end": "2017-11-21 01:00:00",
+  "val_start": "2017-11-21 02:00:00",
+  "test_start": "2018-02-01 16:00:00",
+  "test_end": "2018-06-26 19:00:00",
+  "target": "OT",
+  "weight": "HULL",
+  "horizon": 2,
+  "global_length": 1,
+  "features": [
+    "HUFL",
+    "HULL",
+    "MUFL",
+    "MULL",
+    "LUFL",
+    "LULL"
+  ],
+  "alpha": 0.0,
+  "target_means": {
+    "1": 8.194732406293042,
+    "2": 21.863337881863117
+  },
+  "target_scales": {
+    "1": 2.568862590941675,
+    "2": 5.057394453283822
+  },
+  "actor_changed": true,
+  "seconds": 9.386096747000067,
+  "parquet_sha256": "286e38cd8ea7b769fbda3dbbf07b8187e3bcd34bf3a5ea2260cc94a6137619f4",
+  "torch": "2.6.0+cpu",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "python": "3.12.14"
+}
