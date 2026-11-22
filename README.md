@@ -4,8 +4,6 @@ Bài cuối kỳ phát triển từ lần tái lập T2f. Mã giữa kỳ ở `s
 
 ## Chạy
 
-Trên Kaggle/Colab, mở `notebooks/final_experiments.ipynb`, thêm ZIP dự án và chọn dataset ở ô cấu hình. Dùng CPU. Trong terminal, đứng tại thư mục chứa README:
-
 ```bash
 python -m pip install -r requirements.txt
 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python -m final.compare --dataset ETTh
@@ -24,7 +22,7 @@ python -m final.summarize
 
 `td3` chạy đối chứng TD3 với sáu dự báo thành phần. `patch_transformer` hỗ trợ ETTh và ETTm (có thể thêm `--horizon 96`). `local_audit` tách năm local gốc tại seed 42 và kiểm tra với kết quả giữa kỳ. `summarize` đọc tệp dự báo đã chạy để kiểm tra MAE, RMSE, khóa trạm/thời điểm và xuất bảng tổng. Lệnh audit nhận tên `eld` viết thường theo code giữa kỳ.
 
-Nếu clone từ GitHub, làm theo [MIDTERM.md](MIDTERM.md) để khôi phục `upstream/` và bộ dữ liệu giữa kỳ từ ZIP Zenodo. Chạy `python final/prepare.py` để lấy bốn CSV gốc ETT và tạo Parquet ELD từ UCI; có thể truyền `--eld-zip /duong/dan/uci.zip`. Bước này cần Internet nếu chưa có dữ liệu. Bản ZIP bàn giao đã chuẩn bị cả hai phần.
+Nếu clone từ GitHub, làm theo [MIDTERM.md](MIDTERM.md) để khôi phục `upstream/` và bộ dữ liệu giữa kỳ từ ZIP Zenodo. Chạy `python final/prepare.py` để lấy bốn CSV gốc ETT và tạo Parquet ELD từ UCI; có thể truyền `--eld-zip /duong/dan/uci.zip`.
 
 ## Kết quả chi tiết
 
