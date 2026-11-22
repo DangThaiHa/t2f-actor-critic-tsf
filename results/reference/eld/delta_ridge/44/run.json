@@ -1,0 +1,43 @@
+{
+  "target_mode": "delta_ridge",
+  "level_scales": {
+    "MT_211": 57.25114750121283
+  },
+  "dataset": "eld",
+  "seed": 44,
+  "profile": "main",
+  "epochs": 8,
+  "train_rows_per_series": 512,
+  "common_regular_steps": 5844,
+  "stations": [
+    "MT_211"
+  ],
+  "train_start": "2013-06-13 18:00:00",
+  "train_end": "2013-10-19 12:00:00",
+  "val_start": "2013-10-19 18:00:00",
+  "test_start": "2014-03-15 00:00:00",
+  "test_end": "2015-01-01 00:00:00",
+  "target": "load",
+  "weight": "cost_kwh",
+  "horizon": 2,
+  "global_length": 3,
+  "features": [
+    "tmax",
+    "tmin",
+    "tmed"
+  ],
+  "alpha": 0.2,
+  "target_means": {
+    "MT_211": -0.009610615079365226
+  },
+  "target_scales": {
+    "MT_211": 79.61530092072967
+  },
+  "actor_changed": true,
+  "seconds": 5.350262644000054,
+  "parquet_sha256": "4560e135ac3e82120c6bdc428fd98540e2c257f823e809cdb0e493a7523fe1ff",
+  "torch": "2.6.0+cpu",
+  "numpy": "2.3.5",
+  "pandas": "2.2.3",
+  "python": "3.12.14"
+}

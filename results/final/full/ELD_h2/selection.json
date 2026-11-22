@@ -1,0 +1,17 @@
+{
+  "selected": "ridge_calendar",
+  "weights": {
+    "last": 0.001141496594758534,
+    "daily": 0.8981811698383255,
+    "weekly": 1.2820982179937053e-11,
+    "nlinear": 0.0,
+    "dlinear": 0.0,
+    "ridge_calendar": 0.10067733373661385
+  },
+  "horizon": 2,
+  "seeds": [
+    42,
+    43,
+    44
+  ]
+}

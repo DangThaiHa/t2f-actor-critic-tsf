@@ -1,0 +1,17 @@
+{
+  "selected": "stacked",
+  "weights": {
+    "last": 0.0,
+    "daily": 0.13881086533500145,
+    "weekly": 0.040784208244625864,
+    "nlinear": 0.3995278144584979,
+    "dlinear": 0.0,
+    "ridge_calendar": 0.42087711196187483
+  },
+  "horizon": 96,
+  "seeds": [
+    42,
+    43,
+    44
+  ]
+}

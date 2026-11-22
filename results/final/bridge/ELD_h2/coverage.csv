@@ -1,0 +1,2 @@
+series,observations,train_end,train_rows,train_windows,short_windows,selection_start,test_start,end
+MT_211,5844,2013-10-19 12:00:00,4090,3993,511,2013-12-31 18:00:00,2014-03-15 00:00:00,2015-01-01 00:00:00

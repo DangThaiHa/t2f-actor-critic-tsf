@@ -1,0 +1,17 @@
+{
+  "selected": "nlinear",
+  "weights": {
+    "last": 0.0,
+    "daily": 0.0,
+    "weekly": 0.0,
+    "nlinear": 0.5002559130185957,
+    "dlinear": 0.0,
+    "ridge_calendar": 0.4997440869814042
+  },
+  "horizon": 2,
+  "seeds": [
+    42,
+    43,
+    44
+  ]
+}
